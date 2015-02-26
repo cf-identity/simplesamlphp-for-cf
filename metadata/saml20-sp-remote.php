@@ -16,8 +16,16 @@ $metadata['https://saml2sp.example.org'] = array(
 $metadata['cloudfoundry-saml-login'] = array(
     'AssertionConsumerService' => 'http://localhost:8080/uaa/saml/SSO/alias/cloudfoundry-saml-login',
     'SingleLogoutService' => 'http://localhost:8080/uaa/saml/SSO/alias/cloudfoundry-saml-login',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'simplesaml.nameidattribute' => 'emailAddress',
 );
 
+$metadata['testzone1.cloudfoundry-saml-login'] = array(
+    'AssertionConsumerService' => 'http://testzone1.localhost:8080/uaa/saml/SSO/alias/testzone1.cloudfoundry-saml-login',
+    'SingleLogoutService' => 'http://testzone1.localhost:8080/uaa/saml/SSO/alias/testzone1.cloudfoundry-saml-login',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'simplesaml.nameidattribute' => 'emailAddress',
+);
 
 /*
  * This example shows an example config that works with Google Apps for education.
