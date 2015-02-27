@@ -20,6 +20,20 @@ $metadata['cloudfoundry-saml-login'] = array(
     'simplesaml.nameidattribute' => 'emailAddress',
 );
 
+$metadata['login.10.244.0.34.xip.io'] = array(
+    'AssertionConsumerService' => 'http://login.10.244.0.34.xip.io/uaa/saml/SSO/alias/login.10.244.0.34.xip.io',
+    'SingleLogoutService' => 'http://login.10.244.0.34.xip.io/uaa/saml/SSO/alias/login.10.244.0.34.xip.io',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'simplesaml.nameidattribute' => 'emailAddress',
+);
+
+$metadata['testzone1.login.10.244.0.34.xip.io'] = array(
+    'AssertionConsumerService' => 'http://testzone1.login.10.244.0.34.xip.io/uaa/saml/SSO/alias/testzone1.login.10.244.0.34.xip.io',
+    'SingleLogoutService' => 'http://testzone1.login.10.244.0.34.xip.io/uaa/saml/SSO/alias/testzone1.login.10.244.0.34.xip.io',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'simplesaml.nameidattribute' => 'emailAddress',
+);
+
 $metadata['testzone1.cloudfoundry-saml-login'] = array(
     'AssertionConsumerService' => 'http://testzone1.localhost:8080/uaa/saml/SSO/alias/testzone1.cloudfoundry-saml-login',
     'SingleLogoutService' => 'http://testzone1.localhost:8080/uaa/saml/SSO/alias/testzone1.cloudfoundry-saml-login',
