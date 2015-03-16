@@ -28,8 +28,8 @@ $metadata['login.10.244.0.34.xip.io'] = array(
 );
 
 $metadata['login.identity.cf-app.com'] = array(
-    'AssertionConsumerService' => 'http://login.identity.cf-app.com/saml/SSO/alias/login.10.244.0.34.xip.io',
-    'SingleLogoutService' => 'http://login.10.244.0.34.xip.io/uaa/saml/SSO/alias/login.10.244.0.34.xip.io',
+    'AssertionConsumerService' => 'http://login.identity.cf-app.com/saml/SSO/alias/login.identity.cf-app.com',
+    'SingleLogoutService' => 'http://login.10.244.0.34.xip.io/uaa/saml/SSO/alias/login.identity.cf-app.com',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
 );
