@@ -5,4 +5,4 @@ applications:
   instances: 1
   host: simplesamlphp
   path: .
-  buildpack: https://github.com/fhanik/php-buildpack.git
+  buildpack: https://github.com/cf-identity/php-buildpack.git
