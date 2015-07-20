@@ -34,6 +34,13 @@ $metadata['login.identity.cf-app.com'] = array(
     'simplesaml.nameidattribute' => 'emailAddress',
 );
 
+$metadata['http://52.1.233.136:8080'] = array(
+    'AssertionConsumerService' => 'http://52.1.233.136:8080/saml/SSO/alias/52.1.233.136',
+    'SingleLogoutService' => 'http://52.1.233.136:8080/saml/SSO/alias/52.1.233.136',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'simplesaml.nameidattribute' => 'emailAddress',
+);
+
 $metadata['testzone1.login.10.244.0.34.xip.io'] = array(
     'AssertionConsumerService' => 'http://testzone1.login.10.244.0.34.xip.io/saml/SSO/alias/testzone1.login.10.244.0.34.xip.io',
     'SingleLogoutService' => 'http://testzone1.login.10.244.0.34.xip.io/saml/SSO/alias/testzone1.login.10.244.0.34.xip.io',
