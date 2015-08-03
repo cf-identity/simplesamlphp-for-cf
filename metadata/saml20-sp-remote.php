@@ -41,6 +41,13 @@ $metadata['http://52.1.233.136:8080'] = array(
     'simplesaml.nameidattribute' => 'emailAddress',
 );
 
+$metadata['https://52.1.233.136:8443'] = array(
+    'AssertionConsumerService' => 'https://52.1.233.136:8443/saml/SSO/alias/52.1.233.136',
+    'SingleLogoutService' => 'https://52.1.233.136:8443/saml/SSO/alias/52.1.233.136',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'simplesaml.nameidattribute' => 'emailAddress',
+);
+
 $metadata['testzone1.login.10.244.0.34.xip.io'] = array(
     'AssertionConsumerService' => 'http://testzone1.login.10.244.0.34.xip.io/saml/SSO/alias/testzone1.login.10.244.0.34.xip.io',
     'SingleLogoutService' => 'http://testzone1.login.10.244.0.34.xip.io/saml/SSO/alias/testzone1.login.10.244.0.34.xip.io',
