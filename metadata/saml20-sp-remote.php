@@ -41,9 +41,9 @@ $metadata['http://52.1.233.136:8080'] = array(
     'simplesaml.nameidattribute' => 'emailAddress',
 );
 
-$metadata['https://52.1.233.136:8443'] = array(
-    'AssertionConsumerService' => 'https://52.1.233.136:8443/saml/SSO/alias/52.1.233.136',
-    'SingleLogoutService' => 'https://52.1.233.136:8443/saml/SSO/alias/52.1.233.136',
+$metadata['uaa-bosh'] = array(
+    'AssertionConsumerService' => 'https://uaa.uaa-bosh.cf-app.com:8443/saml/SSO/alias/uaa-bosh',
+    'SingleLogoutService' => 'https://uaa.uaa-bosh.cf-app.com:8443/saml/SSO/alias/uaa-bosh',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
 );
