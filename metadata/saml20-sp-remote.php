@@ -62,6 +62,12 @@ $metadata['testzone1.cloudfoundry-saml-login'] = array(
     'simplesaml.nameidattribute' => 'emailAddress',
 );
 
+$metadata['testzone2.cloudfoundry-saml-login'] = array(
+    'AssertionConsumerService' => 'http://testzone2.localhost:8080/uaa/saml/SSO/alias/testzone2.cloudfoundry-saml-login',
+    'SingleLogoutService' => 'http://testzone2.localhost:8080/uaa/saml/SSO/alias/testzone2.cloudfoundry-saml-login',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'simplesaml.nameidattribute' => 'emailAddress',
+);
 /*
  * This example shows an example config that works with Google Apps for education.
  * What is important is that you have an attribute in your IdP that maps to the local part of the email address

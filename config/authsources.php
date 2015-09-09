@@ -98,6 +98,20 @@ $config = array(
             'eduPersonAffiliation' => array('member', 'marissa'),
             'emailAddress' => 'marissa@test.org'
         ),
+
+        'marissa2:saml2' => array(
+            //'uid' => array('marissa'),
+            'uid' => 'marissa2@test.org',
+            'eduPersonAffiliation' => array('member', 'marissa2'),
+            'emailAddress' => 'marissa2@test.org'
+        ),
+
+        'marissa3:saml2' => array(
+            //'uid' => array('marissa'),
+            'uid' => 'marissa3@test.org',
+            'eduPersonAffiliation' => array('member', 'marissa3'),
+            'emailAddress' => 'marissa3@test.org'
+        ),
     ),
     
 
