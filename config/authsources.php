@@ -112,6 +112,14 @@ $config = array(
             'eduPersonAffiliation' => array('member', 'marissa3'),
             'emailAddress' => 'marissa3@test.org'
         ),
+
+        'marissa4:saml2' => array(
+            //'uid' => array('marissa'),
+            'uid' => 'marissa4',
+            'eduPersonAffiliation' => array('member', 'marissa4'),
+            'emailAddress' => 'marissa4@test.org',
+            'groups' => array('saml.user', 'saml.admin'),
+        ),
     ),
     
 
