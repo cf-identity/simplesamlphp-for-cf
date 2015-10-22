@@ -93,32 +93,37 @@ $config = array(
         'remember.username.checked' => TRUE,
 
         'marissa:koala' => array(
-            //'uid' => array('marissa'),
             'uid' => 'marissa@test.org',
             'eduPersonAffiliation' => array('member', 'marissa'),
             'emailAddress' => 'marissa@test.org'
         ),
 
         'marissa2:saml2' => array(
-            //'uid' => array('marissa'),
             'uid' => 'marissa2@test.org',
             'eduPersonAffiliation' => array('member', 'marissa2'),
             'emailAddress' => 'marissa2@test.org'
         ),
 
         'marissa3:saml2' => array(
-            //'uid' => array('marissa'),
             'uid' => 'marissa3@test.org',
             'eduPersonAffiliation' => array('member', 'marissa3'),
             'emailAddress' => 'marissa3@test.org'
         ),
 
         'marissa4:saml2' => array(
-            //'uid' => array('marissa'),
             'uid' => 'marissa4',
             'eduPersonAffiliation' => array('member', 'marissa4'),
             'emailAddress' => 'marissa4@test.org',
             'groups' => array('saml.user', 'saml.admin'),
+        ),
+
+        'marissa5:saml5' => array(
+            'uid' => 'marissa5',
+            'eduPersonAffiliation' => array('member', 'marissa5'),
+            'emailAddress' => 'marissa5@test.org',
+            'groups' => array('saml.user', 'saml.admin'),
+            'costCenter' => 'Denver,CO',
+            'manager' => array('John the Sloth', 'Kari the Ant Eater'),
         ),
     ),
     
