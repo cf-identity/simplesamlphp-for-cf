@@ -125,8 +125,17 @@ $config = array(
             'costCenter' => 'Denver,CO',
             'manager' => array('John the Sloth', 'Kari the Ant Eater'),
         ),
+
+        'user_only_for_invitations_test:saml' => array(
+            'uid' => 'test_invite',
+            'eduPersonAffiliation' => array('member', 'user_only_for_invitations_test'),
+            'emailAddress' => 'testinvite@test.org',
+            'groups' => array('saml.user', 'saml.admin'),
+            'costCenter' => 'Denver,CO',
+            'manager' => array('John the Sloth', 'Kari the Ant Eater'),
+        ),
     ),
-    
+
 
     /*
     'crypto-hash' => array(
