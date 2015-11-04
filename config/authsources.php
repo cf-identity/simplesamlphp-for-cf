@@ -83,7 +83,7 @@ $config = array(
     ),
     */
 
-    
+
     'example-userpass' => array(
         'exampleauth:UserPass',
 
@@ -127,7 +127,7 @@ $config = array(
         ),
 
         'user_only_for_invitations_test:saml' => array(
-            'uid' => 'test_invite',
+            'uid' => 'user_only_for_invitations_test',
             'eduPersonAffiliation' => array('member', 'user_only_for_invitations_test'),
             'emailAddress' => 'testinvite@test.org',
             'groups' => array('saml.user', 'saml.admin'),

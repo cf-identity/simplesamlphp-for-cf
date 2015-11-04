@@ -16,8 +16,8 @@ $metadata['https://saml2sp.example.org'] = array(
 $metadata['cloudfoundry-saml-login'] = array(
     'AssertionConsumerService' => 'http://localhost:8080/uaa/saml/SSO/alias/cloudfoundry-saml-login',
     'SingleLogoutService' => 'http://localhost:8080/uaa/saml/SSO/alias/cloudfoundry-saml-login',
-    'NameIDFormat' => 'uid',
-    'simplesaml.nameidattribute' => 'emailAddress',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified',
+    'simplesaml.nameidattribute' => 'uid',
 );
 
 $metadata['login.10.244.0.34.xip.io'] = array(
