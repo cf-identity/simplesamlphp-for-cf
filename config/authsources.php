@@ -126,6 +126,15 @@ $config = array(
             'manager' => array('John the Sloth', 'Kari the Ant Eater'),
         ),
 
+        'marissa6:saml6' => array(
+            'uid' => 'marissa6',
+            'eduPersonAffiliation' => array('member'),
+            'emailAddress' => 'marissa6@test.org',
+            'groups' => array('saml.user', 'saml.admin'),
+            'costCenter' => 'Denver,CO',
+            'manager' => array('John the Sloth', 'Kari the Ant Eater'),
+        ),
+
         'user_only_for_invitations_test:saml' => array(
             'uid' => 'user_only_for_invitations_test',
             'eduPersonAffiliation' => array('member', 'user_only_for_invitations_test'),
