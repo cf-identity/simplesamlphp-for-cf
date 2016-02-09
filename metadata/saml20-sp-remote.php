@@ -15,7 +15,7 @@ $metadata['https://saml2sp.example.org'] = array(
 
 $metadata['cloudfoundry-saml-login'] = array(
     'AssertionConsumerService' => 'http://localhost:8080/uaa/saml/SSO/alias/cloudfoundry-saml-login',
-    'SingleLogoutService' => 'http://localhost:8080/uaa/saml/SSO/alias/cloudfoundry-saml-login',
+    'SingleLogoutService' => 'http://localhost:8080/uaa/saml/SingleLogout/alias/cloudfoundry-saml-login',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified',
     'simplesaml.nameidattribute' => 'uid',
 );
@@ -29,7 +29,7 @@ $metadata['login.10.244.0.34.xip.io'] = array(
 
 $metadata['login.identity.cf-app.com'] = array(
     'AssertionConsumerService' => 'https://login.identity.cf-app.com/saml/SSO/alias/login.identity.cf-app.com',
-    'SingleLogoutService' => 'https://login.10.244.0.34.xip.io/uaa/saml/SSO/alias/login.identity.cf-app.com',
+    'SingleLogoutService' => 'https://login.identity.cf-app.com/saml/SingleLogout/alias/login.identity.cf-app.com',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
 );
