@@ -84,8 +84,8 @@ $metadata['testzone4.cloudfoundry-saml-login'] = array(
 );
 
 $metadata['http://oidc10.identity.cf-app.com'] = array(
-    'AssertionConsumerService' => 'http://oidc10.identity.cf-app.com/saml/SSO/alias/oidc10.identity.cf-app.com',
-    'SingleLogoutService' => 'http://oidc10.identity.cf-app.com/saml/SSO/alias/oidc10.identity.cf-app.com',
+    'AssertionConsumerService' => 'https://oidc10.identity.cf-app.com/saml/SSO/alias/oidc10.identity.cf-app.com',
+    'SingleLogoutService' => 'https://oidc10.identity.cf-app.com/saml/SSO/alias/oidc10.identity.cf-app.com',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
 );
