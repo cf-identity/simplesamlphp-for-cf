@@ -83,6 +83,14 @@ $metadata['testzone4.cloudfoundry-saml-login'] = array(
     'simplesaml.nameidattribute' => 'uid',
 );
 
+$metadata['oidcloginit.cloudfoundry-saml-login'] = array(
+    'AssertionConsumerService' => 'http://oidcloginit.localhost:8080/uaa/saml/SSO/alias/oidcloginit.cloudfoundry-saml-login',
+    'SingleLogoutService' => 'http://oidcloginit.localhost:8080/uaa/saml/SSO/alias/oidcloginit.cloudfoundry-saml-login',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified',
+    'simplesaml.nameidattribute' => 'uid',
+);
+
+
 $metadata['https://oidc10.identity.cf-app.com'] = array(
     'AssertionConsumerService' => 'https://oidc10.identity.cf-app.com/saml/SSO/alias/oidc10.identity.cf-app.com',
     'SingleLogoutService' => 'https://oidc10.identity.cf-app.com/saml/SSO/alias/oidc10.identity.cf-app.com',
