@@ -6,3 +6,5 @@ applications:
   host: simplesamlphp
   path: .
   buildpack: https://github.com/cf-identity/php-buildpack.git
+  env:
+    GITHUB_URL: https://github.com/cf-identity/simplesamlphp-for-cf.git
