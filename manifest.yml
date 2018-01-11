@@ -3,7 +3,6 @@ applications:
 - name: simplesamlphp
   memory: 128M
   instances: 1
-  host: simplesamlphp
   path: .
   buildpack: https://github.com/cf-identity/php-buildpack.git
   env:
