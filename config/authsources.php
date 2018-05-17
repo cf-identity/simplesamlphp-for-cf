@@ -143,6 +143,12 @@ $config = array(
             'costCenter' => 'Denver,CO',
             'manager' => array('John the Sloth', 'Kari the Ant Eater'),
         ),
+
+        'user:password' => array(
+            'uid' => 'testuser@spring.security.saml',
+            'eduPersonAffiliation' => array('member', 'user'),
+            'emailAddress' => 'testuser@spring.security.saml'
+        ),
     ),
 
 

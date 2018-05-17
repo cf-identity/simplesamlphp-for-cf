@@ -98,6 +98,14 @@ $metadata['https://oidc10.identity.cf-app.com'] = array(
     'simplesaml.nameidattribute' => 'emailAddress',
 );
 
+$metadata['spring.security.saml.sp.id'] = array(
+    'AssertionConsumerService' => 'http://localhost:8080/sample-sp/saml/sp/SSO',
+    'SingleLogoutService' => 'http://localhost:8080/sample-sp/saml/sp/logout',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'simplesaml.nameidattribute' => 'emailAddress',
+);
+
+
 /*
  * This example shows an example config that works with Google Apps for education.
  * What is important is that you have an attribute in your IdP that maps to the local part of the email address
