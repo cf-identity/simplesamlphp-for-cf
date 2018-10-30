@@ -64,7 +64,7 @@ $metadata['testzone1.cloudfoundry-saml-login'] = array(
 
 $metadata['testzone2.cloudfoundry-saml-login'] = array(
     'AssertionConsumerService' => 'http://testzone2.localhost:8080/uaa/saml/SSO/alias/testzone2.cloudfoundry-saml-login',
-    'SingleLogoutService' => 'http://testzone2.localhost:8080/uaa/saml/SSO/alias/testzone2.cloudfoundry-saml-login',
+    'SingleLogoutService' => 'http://testzone2.localhost:8080/uaa/saml/SingleLogout/alias/testzone2.cloudfoundry-saml-login',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
 );
@@ -99,8 +99,8 @@ $metadata['https://oidc10.identity.cf-app.com'] = array(
 );
 
 $metadata['spring.security.saml.sp.id'] = array(
-    'AssertionConsumerService' => 'http://localhost:8080/sample-sp/saml/sp/SSO',
-    'SingleLogoutService' => 'http://localhost:8080/sample-sp/saml/sp/logout',
+    'AssertionConsumerService' => 'http://localhost:8080/sample-sp/saml/sp/SSO/alias/boot-sample-sp',
+    'SingleLogoutService' => 'http://localhost:8080/sample-sp/saml/sp/logout/alias/boot-sample-sp',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
     'certData' => 'MIICgTCCAeoCCQCuVzyqFgMSyDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMC
