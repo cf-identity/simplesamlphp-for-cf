@@ -1,0 +1,10 @@
+---
+applications:
+- name: simplesamlphp
+  memory: 128M
+  instances: 1
+  path: .
+  stack: cflinuxfs3
+  buildpack: https://github.com/cloudfoundry/php-buildpack.git
+  env:
+    GITHUB_URL: https://github.com/cloudfoundry/simplesamlphp-for-cf.git
