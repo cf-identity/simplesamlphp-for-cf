@@ -168,7 +168,7 @@ if ($this->data['errorcode'] !== null) {
             <tr id="submit">
                 <td class="loginicon"></td><td></td>
                 <td>
-                    <input type="button" tabindex="5" id="submit_button" value="<?php echo $this->t('{login:login_button}'); ?>" />
+                    <input type="submit" tabindex="6" id="submit_button" value="<?php echo $this->t('{login:login_button}'); ?>" />
                 </td>
             </tr>
         </table>
