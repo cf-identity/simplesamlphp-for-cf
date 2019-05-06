@@ -261,7 +261,9 @@ $config = [
      * ),
      *
      */
-
+     'module.enable' => array(
+        'exampleauth' => TRUE,
+     ),
 
     /*
      * This value is the duration of the session in seconds. Make sure that the time duration of
