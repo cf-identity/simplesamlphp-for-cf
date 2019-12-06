@@ -14,8 +14,8 @@ $metadata['https://saml2sp.example.org'] = array(
 );
 
 $metadata['cloudfoundry-saml-login'] = array(
-    'AssertionConsumerService' => 'http://localhost:8080/saml/SSO/alias/cloudfoundry-saml-login',
-    'SingleLogoutService' => 'http://localhost:8080/saml/SingleLogout/alias/cloudfoundry-saml-login',
+    'AssertionConsumerService' => 'http://localhost:8080/uaa/saml/SSO/alias/cloudfoundry-saml-login',
+    'SingleLogoutService' => 'http://localhost:8080/uaa/saml/SingleLogout/alias/cloudfoundry-saml-login',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified',
     'simplesaml.nameidattribute' => 'uid',
 );
@@ -56,36 +56,36 @@ $metadata['testzone1.login.10.244.0.34.xip.io'] = array(
 );
 
 $metadata['testzone1.cloudfoundry-saml-login'] = array(
-    'AssertionConsumerService' => 'http://testzone1.localhost:8080/saml/SSO/alias/testzone1.cloudfoundry-saml-login',
-    'SingleLogoutService' => 'http://testzone1.localhost:8080/saml/SSO/alias/testzone1.cloudfoundry-saml-login',
+    'AssertionConsumerService' => 'http://testzone1.localhost:8080/uaa/saml/SSO/alias/testzone1.cloudfoundry-saml-login',
+    'SingleLogoutService' => 'http://testzone1.localhost:8080/uaa/saml/SSO/alias/testzone1.cloudfoundry-saml-login',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
 );
 
 $metadata['testzone2.cloudfoundry-saml-login'] = array(
-    'AssertionConsumerService' => 'http://testzone2.localhost:8080/saml/SSO/alias/testzone2.cloudfoundry-saml-login',
-    'SingleLogoutService' => 'http://testzone2.localhost:8080/saml/SingleLogout/alias/testzone2.cloudfoundry-saml-login',
+    'AssertionConsumerService' => 'http://testzone2.localhost:8080/uaa/saml/SSO/alias/testzone2.cloudfoundry-saml-login',
+    'SingleLogoutService' => 'http://testzone2.localhost:8080/uaa/saml/SingleLogout/alias/testzone2.cloudfoundry-saml-login',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
 );
 
 $metadata['testzone3.cloudfoundry-saml-login'] = array(
-    'AssertionConsumerService' => 'http://testzone3.localhost:8080/saml/SSO/alias/invalid',
-    'SingleLogoutService' => 'http://testzone3.localhost:8080/saml/SSO/alias/invalid',
+    'AssertionConsumerService' => 'http://testzone3.localhost:8080/uaa/saml/SSO/alias/invalid',
+    'SingleLogoutService' => 'http://testzone3.localhost:8080/uaa/saml/SSO/alias/invalid',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
 );
 
 $metadata['testzone4.cloudfoundry-saml-login'] = array(
-    'AssertionConsumerService' => 'http://testzone4.localhost:8080/saml/SSO/alias/testzone4.cloudfoundry-saml-login',
-    'SingleLogoutService' => 'http://testzone4.localhost:8080/saml/SSO/alias/testzone4.cloudfoundry-saml-login',
+    'AssertionConsumerService' => 'http://testzone4.localhost:8080/uaa/saml/SSO/alias/testzone4.cloudfoundry-saml-login',
+    'SingleLogoutService' => 'http://testzone4.localhost:8080/uaa/saml/SSO/alias/testzone4.cloudfoundry-saml-login',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified',
     'simplesaml.nameidattribute' => 'uid',
 );
 
 $metadata['oidcloginit.cloudfoundry-saml-login'] = array(
-    'AssertionConsumerService' => 'http://oidcloginit.localhost:8080/saml/SSO/alias/oidcloginit.cloudfoundry-saml-login',
-    'SingleLogoutService' => 'http://oidcloginit.localhost:8080/saml/SSO/alias/oidcloginit.cloudfoundry-saml-login',
+    'AssertionConsumerService' => 'http://oidcloginit.localhost:8080/uaa/saml/SSO/alias/oidcloginit.cloudfoundry-saml-login',
+    'SingleLogoutService' => 'http://oidcloginit.localhost:8080/uaa/saml/SSO/alias/oidcloginit.cloudfoundry-saml-login',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified',
     'simplesaml.nameidattribute' => 'uid',
 );
