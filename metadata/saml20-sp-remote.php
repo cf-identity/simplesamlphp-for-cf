@@ -98,7 +98,7 @@ $metadata['https://oidc10.uaa-acceptance.cf-app.com'] = array(
     'simplesaml.nameidattribute' => 'emailAddress',
 );
 
-$metadata['https://login.uaa-acceptance-74.cf-app.com'] = array(
+$metadata['login.uaa-acceptance-74.cf-app.com'] = array(
     'AssertionConsumerService' => 'https://login.uaa-acceptance-74.cf-app.com/saml/SSO/alias/login.uaa-acceptance-74.cf-app.com',
     'SingleLogoutService' => 'https://login.uaa-acceptance-74.cf-app.com/saml/SSO/alias/login.uaa-acceptance-74.cf-app.com',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
