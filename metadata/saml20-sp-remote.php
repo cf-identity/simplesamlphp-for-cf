@@ -91,9 +91,9 @@ $metadata['oidcloginit.cloudfoundry-saml-login'] = array(
 );
 
 
-$metadata['https://oidc10.identity.cf-app.com'] = array(
-    'AssertionConsumerService' => 'https://oidc10.identity.cf-app.com/saml/SSO/alias/oidc10.identity.cf-app.com',
-    'SingleLogoutService' => 'https://oidc10.identity.cf-app.com/saml/SSO/alias/oidc10.identity.cf-app.com',
+$metadata['https://oidc10.uaa-acceptance.cf-app.com'] = array(
+    'AssertionConsumerService' => 'https://oidc10.uaa-acceptance.cf-app.com/saml/SSO/alias/oidc10.identity.cf-app.com',
+    'SingleLogoutService' => 'https://oidc10.uaa-acceptance.cf-app.com/saml/SSO/alias/oidc10.uaa-acceptance.cf-app.com',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
 );
