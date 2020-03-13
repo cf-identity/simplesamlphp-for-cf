@@ -98,6 +98,13 @@ $metadata['https://oidc10.uaa-acceptance.cf-app.com'] = array(
     'simplesaml.nameidattribute' => 'emailAddress',
 );
 
+$metadata['https://uaa.uaa-acceptance-74.cf-app.com'] = array(
+    'AssertionConsumerService' => 'https://uaa.uaa-acceptance-74.cf-app.com/saml/SSO/alias/uaa.uaa-acceptance-74.cf-app.com',
+    'SingleLogoutService' => 'https://uaa.uaa-acceptance-74.cf-app.com/saml/SSO/alias/uaa.uaa-acceptance-74.cf-app.com',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
+    'simplesaml.nameidattribute' => 'emailAddress',
+);
+
 $metadata['spring.security.saml.sp.id'] = array(
     'AssertionConsumerService' => 'http://localhost:8080/sample-sp/saml/sp/SSO/alias/boot-sample-sp',
     'SingleLogoutService' => 'http://localhost:8080/sample-sp/saml/sp/logout/alias/boot-sample-sp',
