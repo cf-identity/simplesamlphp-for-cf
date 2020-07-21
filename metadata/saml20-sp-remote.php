@@ -129,7 +129,7 @@ RZ/nbTJ7VTeZOSyRoVn5XHhpuJ0B',
 );
 
 $metadata['http://localhost:8080/sample-sp'] = array(
-    'AssertionConsumerService' => 'http://localhost:8080/sample-sp/saml/sp/SSO/alias/localhost',
+    'AssertionConsumerService' => 'http://localhost:8080/sample-sp/saml2/SSO/alias/localhost',
     'SingleLogoutService' => 'http://localhost:8080/sample-sp/saml/sp/logout/alias/localhost',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
@@ -151,9 +151,9 @@ RZ/nbTJ7VTeZOSyRoVn5XHhpuJ0B',
     'nameid.encryption' => FALSE,
 );
 
-$metadata['http://localhost:8080/sample-sp/saml/sp/metadata/simplesamlphp'] = array(
-    'AssertionConsumerService' => 'http://localhost:8080/sample-sp/saml/sp/SSO/simplesamlphp',
-    'SingleLogoutService' => 'http://localhost:8080/sample-sp/saml/sp/logout/simplesamlphp',
+$metadata['http://localhost:8080/saml2/service-provider-metadata/simplesamlphp'] = array(
+    'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/simplesamlphp',
+    'SingleLogoutService' => 'http://localhost:8080/saml2/logout/simplesamlphp',
     'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress',
     'simplesaml.nameidattribute' => 'emailAddress',
     'certData' => 'MIICgTCCAeoCCQCuVzyqFgMSyDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMC
@@ -172,9 +172,34 @@ qK7UFgP1bRl5qksrYX5S0z2iGJh0GvonLUt3e20Ssfl5tTEDDnAEUMLfBkyaxEHD
 RZ/nbTJ7VTeZOSyRoVn5XHhpuJ0B',
     'assertion.encryption' => FALSE,
     'nameid.encryption' => FALSE,
+    'validate.authnrequest' => TRUE,
+    'redirect.sign' => TRUE,
+
 );
 
 
+$metadata['http://localhost:8080/saml2/service-provider-metadata/simplesamlphp2'] = array(
+    'AssertionConsumerService' => 'http://localhost:8080/login/saml2/sso/simplesamlphp2',
+    'SingleLogoutService' => 'http://localhost:8080/saml2/logout/simplesamlphp2',
+    'NameIDFormat' => 'urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified',
+    'simplesaml.nameidattribute' => 'eduPersonPrincipalName',
+    'certData' => 'MIICgTCCAeoCCQCuVzyqFgMSyDANBgkqhkiG9w0BAQsFADCBhDELMAkGA1UEBhMC
+VVMxEzARBgNVBAgMCldhc2hpbmd0b24xEjAQBgNVBAcMCVZhbmNvdXZlcjEdMBsG
+A1UECgwUU3ByaW5nIFNlY3VyaXR5IFNBTUwxCzAJBgNVBAsMAnNwMSAwHgYDVQQD
+DBdzcC5zcHJpbmcuc2VjdXJpdHkuc2FtbDAeFw0xODA1MTQxNDMwNDRaFw0yODA1
+MTExNDMwNDRaMIGEMQswCQYDVQQGEwJVUzETMBEGA1UECAwKV2FzaGluZ3RvbjES
+MBAGA1UEBwwJVmFuY291dmVyMR0wGwYDVQQKDBRTcHJpbmcgU2VjdXJpdHkgU0FN
+TDELMAkGA1UECwwCc3AxIDAeBgNVBAMMF3NwLnNwcmluZy5zZWN1cml0eS5zYW1s
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDRu7/EI0BlNzMEBFVAcbx+lLos
+vzIWU+01dGTY8gBdhMQNYKZ92lMceo2CuVJ66cUURPym3i7nGGzoSnAxAre+0YIM
++U0razrWtAUE735bkcqELZkOTZLelaoOztmWqRbe5OuEmpewH7cx+kNgcVjdctOG
+y3Q6x+I4qakY/9qhBQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAAeViTvHOyQopWEi
+XOfI2Z9eukwrSknDwq/zscR0YxwwqDBMt/QdAODfSwAfnciiYLkmEjlozWRtOeN+
+qK7UFgP1bRl5qksrYX5S0z2iGJh0GvonLUt3e20Ssfl5tTEDDnAEUMLfBkyaxEHD
+RZ/nbTJ7VTeZOSyRoVn5XHhpuJ0B',
+    'assertion.encryption' => TRUE,
+    'nameid.encryption' => TRUE,
+);
 /*
  * This example shows an example config that works with Google Apps for education.
  * What is important is that you have an attribute in your IdP that maps to the local part of the email address
